@@ -1,0 +1,99 @@
+:root {
+ --color-primario: #1a73e8;
+ color-fondo-suave: #e8f0fe
+}
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ line-height: 1.5
+}
+
+h1 {
+ color: #1a73e8;
+}
+
+h2 {
+ font-size: 1.8rem
+}
+
+h1, h2 {
+ font-weight: bold;
+  text-align: center;
+}
+
+.servicios
+{
+ margin-bottom: 40px;
+}
+
+.servicios ul {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 15px;
+ list-style: none;
+ padding: 0; 
+}
+
+.servicios li {
+ background-color: #e8F0Fe;
+ padding: 15px;
+ border-radius: 8px;
+ text-align: center;
+}
+
+.formulario {
+ width: 90%;
+ max-width: 500px;
+ margin: 10px auto;
+ background-color: rgba(173, 216, 230, 0.6);
+ padding: 15px 25px 15px 25px;   
+}
+
+#telefono {
+ border: solid red;
+}
+
+.boton {
+ display: inline-block;
+ background-color: green;
+ color: white;
+ padding: 12px 20px;
+ text-decoration: none;
+ border-radius: 8px;
+ transition: background-color 0.3s;
+}
+
+.boton:hover {
+ background-color: darkgreen;
+}
+
+.botones {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ z-index: 100;
+}
+
+fieldset {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+}
+
+legend{
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+.formulario {
+  padding: 30px 50px;
+ }
+}
