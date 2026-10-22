@@ -1,6 +1,6 @@
 :root {
  --color-primario: #1a73e8;
- color-fondo-suave: #e8f0fe
+ --color-fondo-suave: #e8f0fe;
 }
 
 * {
@@ -9,7 +9,7 @@
 
 body {
  font-family: Arial, sans-serif;
- line-height: 1.5
+ line-height: 1.5;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
- font-size: 1.8rem
+ font-size: 1.8rem;
 }
 
 h1, h2 {
@@ -39,10 +39,21 @@ h1, h2 {
 }
 
 .servicios li {
- background-color: #e8F0Fe;
+ background-color: var(--color-fondo-suave);
  padding: 15px;
  border-radius: 8px;
  text-align: center;
+ box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+ overflow-wrap: break-word;
+ min-width: 0;
+}
+
+.servicios li::before {
+ content: "🛜";
+}
+
+.servicios li:nth-child(2) {
+ border: 2px solid var(--color-primario);
 }
 
 .formulario {
@@ -96,4 +107,12 @@ legend{
 .formulario {
   padding: 30px 50px;
  }
+}
+ input:focus {
+  border-color: var(--color-primario);
+  outline: none;
+ }
+
+.logo {
+ max-width: 100%; 
 }
