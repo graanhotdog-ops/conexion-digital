@@ -10,6 +10,7 @@
 body {
  font-family: Arial, sans-serif;
  line-height: 1.5;
+  padding-bottom: 90px;
 }
 
 h1 {
@@ -25,6 +26,31 @@ h1, h2 {
   text-align: center;
 }
 
+.logo {
+ max-width: 100%; 
+}
+
+.proveedores ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.proveedores li {
+  background-color: var(--color-fondo-suave);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+}
+
+.proveedores p {
+  text-align: center;
+}
+
 .servicios
 {
  margin-bottom: 40px;
@@ -32,7 +58,7 @@ h1, h2 {
 
 .servicios ul {
  display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr;
  gap: 15px;
  list-style: none;
  padding: 0; 
@@ -52,7 +78,7 @@ h1, h2 {
  content: "🛜";
 }
 
-.servicios li:nth-child(2) {
+.servicios li {
  border: 2px solid var(--color-primario);
 }
 
@@ -64,8 +90,29 @@ h1, h2 {
  padding: 15px 25px 15px 25px;   
 }
 
-#telefono {
- border: solid red;
+.formulario input[type="text"],
+.formulario input[type="tel"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-primario);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formulario btton :hover {
+  background-color: #1558b0
 }
 
 .boton {
@@ -97,6 +144,7 @@ fieldset {
  display: flex;
  flex-direction: column;
  gap: 12px;
+  margin-bottom: 15px;
 }
 
 legend{
@@ -107,12 +155,14 @@ legend{
 .formulario {
   padding: 30px 50px;
  }
+  
 }
  input:focus {
   border-color: var(--color-primario);
   outline: none;
  }
 
-.logo {
- max-width: 100%; 
+.aviso {
+  font-size: 0.9rem;
+  color: #444;
 }
