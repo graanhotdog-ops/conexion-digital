@@ -201,9 +201,81 @@ header,
 main {
   max-width: 700px;
   margin: 0 auto;
-  padding: o 16px;
+  padding: 0 16px;
 }
 
 .contacto {
   text-align: center;
+}
+
+<!---Integracion de CSS complementario--->
+
+
+/* Espaciado de cada campo */
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Campos de texto y teléfono */
+.formulario input[type="text"],
+.formulario input[type="tel"] {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background-color: white;
+  color: #111;
+}
+
+/* Selección de opciones */
+.formulario fieldset {
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 0 0 18px;
+}
+
+.formulario legend {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.formulario fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.formulario input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  accent-color: var(--color-primario);
+}
+
+.formulario input:focus-visible,
+.formulario button:focus-visible {
+  outline: 3px solid #164e9c;
+  outline-offset: 3px;
+}
+
+.campo small {
+  display: block;
+  margin-top: 5px;
+  color: #333;
+}
+
+.formulario button {
+  min-height: 48px;
 }
